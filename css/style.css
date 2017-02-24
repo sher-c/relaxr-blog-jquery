@@ -142,13 +142,24 @@ h2 a {
   padding-left: 3px;
   font-weight: 600;
 }
-.readmore {
+.readmore{
   text-align: right;
   margin-top: 30px;
 }
 .readmore a {
   color: #043049;
   font-weight: 600;
+}
+
+#moreans{
+  text-align: right;
+}
+#moreans2{
+  text-align: right;
+}
+
+#learnans {
+  color: #043049;
 }
 
 .button {
@@ -224,7 +235,3 @@ footer p {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-
-
-
