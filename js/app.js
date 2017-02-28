@@ -1,14 +1,18 @@
-function toggleAnswer1() {
-  $('#moreans').slideToggle();
-}
-function toggleAnswer2() {
-  $('#moreans2').slideToggle();
-}
+$(document).ready(function () {
+$('.morecontent'). hide();
 
+$('.readmore').click(function(event){
+event.preventDefault();
+  var text = $(this).text()
+console.log(text)
+  if (text === "Read more >") {
+    $(this).text('Read less')
+    $(this).siblings('.morecontent').show();
+  }
 
-$('#moreans').hide();
-$('#moreans2').hide();
-
-
-$('#readmore').click(toggleAnswer1);
-$('#readmore2').click(toggleAnswer2);
+   if (text === "Read less") {
+     $(this).text('Read more >')
+     $(this).siblings('.morecontent').hide();
+  }
+});
+})
